@@ -1,2 +1,0 @@
-# Bakery-Shop
-Bakery Shop
