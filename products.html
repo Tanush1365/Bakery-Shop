@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Wear | Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="products">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Demon Wear</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a class="active" href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart <span data-cart-count>0</span></a>
+          <button class="theme-toggle" type="button" data-theme-toggle>Dark</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero compact">
+        <div class="container reveal">
+          <p class="eyebrow">Product listing</p>
+          <h1>Shop the latest Demon Wear edit.</h1>
+        </div>
+      </section>
+
+      <section class="section-space">
+        <div class="container shop-layout">
+          <aside class="filters-card reveal">
+            <div class="filter-group">
+              <label for="categoryFilter">Category</label>
+              <select id="categoryFilter" data-filter="category">
+                <option value="all">All</option>
+                <option value="women">Women</option>
+                <option value="men">Men</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="priceFilter">Price</label>
+              <select id="priceFilter" data-filter="price">
+                <option value="all">All</option>
+                <option value="under100">Under $100</option>
+                <option value="100to160">$100 - $160</option>
+                <option value="over160">Over $160</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="sizeFilter">Size</label>
+              <select id="sizeFilter" data-filter="size">
+                <option value="all">All</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="colorFilter">Color</label>
+              <select id="colorFilter" data-filter="color">
+                <option value="all">All</option>
+                <option value="Black">Black</option>
+                <option value="Beige">Beige</option>
+                <option value="White">White</option>
+                <option value="Olive">Olive</option>
+              </select>
+            </div>
+          </aside>
+
+          <div class="shop-content">
+            <div class="shop-toolbar reveal">
+              <p><span data-product-count>0</span> products available</p>
+              <a class="subtle-link" href="cart.html">View cart</a>
+            </div>
+            <div class="product-grid" data-product-grid></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">Demon Wear</a>
+          <p>Premium fashion with a refined, modern attitude.</p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <a href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://pinterest.com" target="_blank" rel="noreferrer">Pinterest</a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

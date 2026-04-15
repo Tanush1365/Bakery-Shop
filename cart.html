@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Wear | Cart & Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="cart">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Demon Wear</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="active" href="cart.html">Cart <span data-cart-count>0</span></a>
+          <button class="theme-toggle" type="button" data-theme-toggle>Dark</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero compact">
+        <div class="container reveal">
+          <p class="eyebrow">Shopping cart</p>
+          <h1>Review your pieces and check out.</h1>
+        </div>
+      </section>
+
+      <section class="section-space">
+        <div class="container cart-layout">
+          <div class="cart-list reveal" data-cart-items></div>
+
+          <aside class="checkout-card reveal delay-1">
+            <h2>Checkout</h2>
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <strong data-subtotal>$0</strong>
+            </div>
+            <div class="summary-line">
+              <span>Shipping</span>
+              <strong>$12</strong>
+            </div>
+            <div class="summary-line total">
+              <span>Total</span>
+              <strong data-total>$12</strong>
+            </div>
+            <form class="checkout-form">
+              <input type="text" placeholder="Full name" aria-label="Full name">
+              <input type="email" placeholder="Email address" aria-label="Email address">
+              <input type="text" placeholder="Shipping address" aria-label="Shipping address">
+              <div class="field-grid">
+                <input type="text" placeholder="City" aria-label="City">
+                <input type="text" placeholder="ZIP code" aria-label="ZIP code">
+              </div>
+              <button class="btn btn-primary full" type="submit">Place Order</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">Demon Wear</a>
+          <p>Premium essentials and statement layers for every day.</p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <a href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://pinterest.com" target="_blank" rel="noreferrer">Pinterest</a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
